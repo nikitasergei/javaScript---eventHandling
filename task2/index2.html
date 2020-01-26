@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task2</title>
+  <script src="script2.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      background: lightgray;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .press {
+      width: 200px;
+      height: 50px;
+      background-color: darkgrey;
+      font-size: 20px;
+    }
+
+    .toOpen{
+      position: absolute;
+    }
+    #openModal {
+      width: 40%;
+      height: 20%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15%;
+      margin-top: 5%;
+      background: lightskyblue;
+
+    }
+
+    #newWind {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(30, 30, 30, 0.3);
+      display: none;
+    }
+
+    .toClose {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #text {
+      text-align: center;
+      padding-bottom: 20px;
+      background: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+<button class="press toOpen"> Open modal</button>
+<div id="newWind">
+  <div id="openModal" class="modalDialog">
+    <h1 id="text">Hello from Modal Window!</h1>
+    <button class="press toClose"> Close</button>
+  </div>
+
+</div>
+</body>
+</html>
